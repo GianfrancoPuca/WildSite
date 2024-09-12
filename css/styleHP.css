@@ -1,0 +1,138 @@
+/* Stili generali */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column; /* Cambia la direzione del flex container in colonna */
+    align-items: center; /* Allinea gli elementi orizzontalmente al centro */
+    justify-content: center; /* Allinea gli elementi verticalmente al centro */
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    /*padding: 10px 20px;*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: gold;
+}
+
+.btn {
+    background-color: #ffc107;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e0a800;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.dropbtn {
+    background-color: #222;
+    color: gold;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: gold;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #333;
+}
+
+.show {
+    display: block;
+}
+
+.hero {
+    padding: 100px 0; /* Aggiunge spazio sopra e sotto */
+    display: flex;
+    flex-direction: column; /* Cambia la direzione del flex container in colonna */
+    align-items: center; /* Allinea gli elementi orizzontalmente al centro */
+    justify-content: center; /* Allinea gli elementi verticalmente al centro */
+}
+
+.hero .logo1 img {
+    width: 30vw; /* Modifica questa dimensione in base alle tue preferenze */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+}
