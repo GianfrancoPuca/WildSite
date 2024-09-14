@@ -15,13 +15,14 @@ header {
     top: 0;
     width: 100%;
     z-index: 10;
+    height: 60px; /* Imposta l'altezza dell'header */
 }
 
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 20px; 
+    padding: 5px 20px;
 }
 
 .logo {
@@ -30,7 +31,7 @@ header {
 }
 
 .logo img {
-    height: 40px; 
+    height: 40px;
     width: auto;
 }
 
@@ -73,7 +74,7 @@ header {
 
 @media (max-width: 768px) {
     .container {
-        padding: 5px 10px; 
+        padding: 5px 10px;
     }
 }
 .menu-toggle {
@@ -141,13 +142,13 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 100vh; 
-    background-image: url('path/to/your/background-image.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    padding: 20px; 
-    color: #fff; 
+    min-height: 100vh;
+    background-image: url('path/to/your/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    color: #fff;
 }
 
 .container1 {
@@ -161,9 +162,9 @@ footer {
 }
 
 .hero-logo img {
-    max-width: 200px; 
+    max-width: 200px;
     width: 50vw;
-    height: auto; 
+    height: auto;
 }
 
 .hero-content {
@@ -173,13 +174,13 @@ footer {
 .hero-content p {
     font-size: 1.2rem;
     line-height: 1.6;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     color: #c4b676;
 }
 
 .btn {
     padding: 10px 20px;
-    background-color: #c4b676; 
+    background-color: #c4b676;
     color: #222;
     border: none;
     border-radius: 5px;
@@ -188,24 +189,24 @@ footer {
 }
 
 .btn:hover {
-    background-color: #c4b676; 
+    background-color: #c4b676;
 }
 
 @media (max-width: 768px) {
     .hero-logo img {
-        width: 70vw; 
+        width: 70vw;
     }
 
     .hero-content p {
-        font-size: 1rem; 
+        font-size: 1rem;
     }
 }
 .footer {
-    background-color: #222; 
-    color: #c4b676; 
+    background-color: #222;
+    color: #c4b676;
     padding: 40px 20px;
     text-align: center;
-    display: none; 
+    display: none;
 }
 
 .footer-container {
@@ -244,7 +245,7 @@ footer {
 
 .icon:hover {
     background-color: #c4b676;
-    color: #222; 
+    color: #222;
 }
 
 .footer-logo {
@@ -263,9 +264,8 @@ footer {
     margin: 5px 0;
 }
 
-
 body {
-    min-height: 200vh; 
+    min-height: 200vh;
     display: flex;
     flex-direction: column;
 }
@@ -276,6 +276,74 @@ body::after {
 }
 
 footer {
-    display: none; 
+    display: none;
     transition: display 0.1s;
-} 
+}
+
+/* Galleria principale */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 20px 40px; /* Aggiungi spazio sopra e sotto, riduci il padding superiore per creare spazio con l'header */
+}
+
+.gallery-box {
+    background-color: #222; /* Colore di sfondo del box */
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 80%; /* Imposta una larghezza massima per il box */
+    text-align: center;
+    color: #c4b676;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+}
+
+/* Contenitore per le immagini */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Due colonne */
+    gap: 10px;
+    margin-bottom: 20px; /* Spazio inferiore per le immagini */
+}
+
+/* Immagini nella galleria */
+.gallery-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Pulsanti di navigazione */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 0 auto; /* Centratura dei pulsanti */
+}
+
+.pagination button {
+    background-color: #c4b676;
+    color: #222;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pagination button:hover {
+    background-color: #a89e6f;
+}
+
+/* Media Query per dispositivi mobili */
+@media (max-width: 768px) {
+    .gallery-box {
+        max-width: 100%; /* Adatta il box alla larghezza dello schermo */
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr; /* Una colonna per schermi più piccoli */
+    }
+}

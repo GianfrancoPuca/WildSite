@@ -279,3 +279,213 @@ footer {
     display: none; 
     transition: display 0.1s;
 } 
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #c4b676; /* Colore dorato per tutto il testo generico */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Header */
+header {
+    background-color: #222; /* Nero per l'header */
+    color: #c4b676; /* Dorato per il testo dell'header */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Container generale */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+/* Dropdown menu */
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: #c4b676;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #c4b676;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #444;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Menu toggle (per dispositivi mobili) */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+    border-radius: 5px;
+}
+
+/* Titolo H1 spostato più in basso per evitare di essere coperto dall'header */
+.hero h1 {
+    color: #c4b676; /* Testo in nero */
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 80px; /* Aggiunta distanza dall'header */
+}
+
+/* Testo di fascia prezzo e punteggi */
+.hero-content h2,
+.hero-content h3,
+.hero-content ul li {
+    color: #c4b676; /* Nero per questi elementi */
+}
+
+/* Rimozione dei pallini dai tag <ul> e <li> */
+ul {
+    list-style-type: none; /* Rimuove i pallini dagli elenchi */
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 1.1rem; /* Dimensione del testo leggermente maggiore */
+    color: #c4b676; /* Colore nero per tutti gli <li> */
+}
+
+/* Pulsante con colori nero e dorato */
+.btn {
+    padding: 10px 20px;
+    background-color: #c4b676; /* Sfondo dorato per il pulsante */
+    color: #222; /* Testo nero */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #c4b676; /* Nessuna variazione di colore in hover */
+}
+
+/* Footer */
+.footer {
+    background-color: #222; /* Nero per il footer */
+    color: #c4b676; /* Testo dorato */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-heading {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #c4b676;
+}
+
+.footer-info p {
+    color: #c4b676;
+}
+
+/* Gestione responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        margin-top: 60px; /* Margine inferiore sui dispositivi mobili */
+    }
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px); /* Riduce lo spazio disponibile per il box, evitando di toccare l'header */
+    padding: 20px;
+    background-color: transparent;
+    margin-top: 100px; /* Aggiunge uno spazio dall'header */
+}
+
+.container1 {
+    background-color: #222; /* Sfondo nero per il box */
+    padding: 20px 30px;
+    border-radius: 15px;
+    max-width: 600px;
+    text-align: center;
+    color: #c4b676;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.hero-content {
+    margin-top: 0; /* Rimuove eventuale spazio in eccesso sopra il contenuto */
+}
+
+.hero-content h1 {
+    margin-bottom: 10px; /* Riduce il margine inferiore del titolo */
+}
+
+.hero-content p,
+.hero-content h2,
+.hero-content h3,
+.hero-content ul li {
+    margin-bottom: 10px; /* Riduce lo spazio sotto gli altri elementi */
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+li {
+    font-size: 1rem; 
+}
+
+.hero-logo img {
+    display: none; /* Nasconde il logo per ridurre l'altezza */
+}
+
+
+

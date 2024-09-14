@@ -279,3 +279,101 @@ footer {
     display: none; 
     transition: display 0.1s;
 } 
+/* CSS per la sezione hero */
+.hero {
+    background: url('../imgs/DSC_4373.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero-logo img {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.menu-section {
+    margin-bottom: 30px;
+}
+
+.menu-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.menu-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-section ul li {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px); /* Riduce lo spazio disponibile per il box, evitando di toccare l'header */
+    padding: 20px;
+    background-color: transparent;
+    margin-top: 100px; /* Aggiunge uno spazio dall'header */
+}
+
+.menu-box {
+    background-color: #222; /* Sfondo nero per il box */
+    padding: 20px 30px;
+    border-radius: 15px;
+    max-width: 600px;
+    text-align: center;
+    color: #c4b676;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.menu-box h1 {
+    margin-bottom: 10px; /* Riduce il margine inferiore del titolo */
+}
+
+.menu-box p,
+.menu-box h2,
+.menu-box h3,
+.menu-box ul li {
+    margin-bottom: 10px; /* Riduce lo spazio sotto gli altri elementi */
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+li {
+    font-size: 1rem; 
+}
+
+.hero-logo img {
+    display: none; /* Nasconde il logo per ridurre l'altezza */
+}
+.hero {
+    background: url('imgs/DSC_4373.jpg') no-repeat center center;
+    background-size: contain; /* Cambia da cover a contain */
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
