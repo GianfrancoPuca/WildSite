@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild - Welcome to the Jungle</title>
+    <link rel="stylesheet" href="css/styleCN.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body background="imgs/DSC_4373.jpg">
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="imgs/logo.png" alt="Logo Wild">
+            </a>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">☰</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="homepage.html">Torna alla Home </a>
+                    <a href="menu.html">Menù</a>
+                    <a href="galleria.html">Galleria</a>
+                    <a href="recensioni.html">Recensioni</a>
+                    <a href="scopri.html">Chi Siamo</a>
+                    <a href="riserva.html"> Prenota tavolo </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="menu-container">
+            <div class="menu-box">
+                <h1>Contatti</h1>
+                <p>Chiama ora per riservare il tuo tavolo</p>
+                
+                <button class="btn call-btn" onclick="makeCall()">
+                    <i class="fas fa-phone"></i> Mariano Comense
+                </button>
+                
+                <div class="schedule">
+                    <i class="fas fa-clock"></i> Tutti i giorni | dalle 18:30 alle 02:00
+                </div>
+                
+                <div class="contact-info">
+                    <p><i class="fas fa-phone-alt"></i> 031749951</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Via Songia 32, Mariano Comense</p>
+                </div>
+                
+                <div class="map-preview">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.5258758200415!2d9.17826797681264!3d45.70911637910369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786d93058ec4df1%3A0x10260f82755edb79!2sVia%20Goffredo%20Songia%2C%2022087%20Mariano%20Comense%20CO!5e0!3m2!1sit!2sit!4v1693832185414!5m2!1sit!2sit"
+                        width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-heading">Seguici ora:</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/wildcocktailbar/" target="_blank" class="icon instagram" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/wildmarianocomense" target="_blank" class="icon facebook" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.tiktok.com/@wildcocktailbar" target="_blank" class="icon tiktok" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+            <div class="footer-logo">
+                <img src="imgs/logo.png" alt="Logo Wild">
+            </div>
+            <div class="footer-info">
+                <p>Mariano Comense</p>
+                <p>🕒 Tutti i giorni | dalle 18:30 alle 02:00</p>
+                <p>📞 031 74 99 51</p>
+                <p>📍 Via Songia 32</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    <script src="js/scriptCN.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild - Welcome to the Jungle</title>
+    <link rel="stylesheet" href="css/styleRC.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body background="imgs/DSC_4373.jpg">
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="imgs/logo.png" alt="Logo Wild">
+            </a>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">☰</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="homepage.html">Torna alla Home </a>
+                    <a href="menu.html">Menù</a>
+                    <a href="galleria.html">Galleria</a>
+                    <a href="scopri.html">Chi Siamo</a>
+                    <a href="contatti.html">Contatti</a>
+                    <a href="riserva.html"> Prenota tavolo </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="menu-container">
+            <div class="menu-box" id="reviews-box">
+                <h1>Recensioni</h1>
+                <div id="reviews-container">
+                    <div class="review">
+                        <p id="review-1"></p>
+                    </div>
+                    <div class="review">
+                        <p id="review-2"></p>
+                    </div>
+                </div>
+                <div class="review-navigation">
+                    <button id="prev-btn" class="btn">Precedente</button>
+                    <button id="next-btn" class="btn">Successivo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-heading">Seguici ora:</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/wildcocktailbar/" target="_blank" class="icon instagram" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/wildmarianocomense" target="_blank" class="icon facebook" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.tiktok.com/@wildcocktailbar" target="_blank" class="icon tiktok" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+            <div class="footer-logo">
+                <img src="imgs/logo.png" alt="Logo Wild">
+            </div>
+            <div class="footer-info">
+                <p>Mariano Comense</p>
+                <p>🕒 Tutti i giorni | dalle 18:30 alle 02:00</p>
+                <p>📞 031 74 99 51</p>
+                <p>📍 Via Songia 32</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    <script src="js/scriptRC.js"></script>
+</body>
+</html>
